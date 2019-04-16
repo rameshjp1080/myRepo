@@ -1,3 +1,6 @@
 server:
   port: 8180
   servlet.context-path: /ramesh
+
+logging:
+  level.org.springframework.web:  TRACE
