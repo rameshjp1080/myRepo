@@ -11,5 +11,5 @@ public interface UserService {
 
     List<UserDetails> getAllUserDetailsByIds(List<Long> userIds);
 
-    List<UserDetails> getALLUserFromInputFile(<List<Long> user);
+    List<UserDetails> getAllUserFromInputFile(List<Long> user);
 }

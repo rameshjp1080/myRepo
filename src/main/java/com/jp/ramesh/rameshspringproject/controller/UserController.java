@@ -44,7 +44,7 @@ public class UserController {
         }
     }
 
-    @RequestMapping("/api/v1/user/ids")
+    @RequestMapping("/api/v1/user")
     public ResponseEntity<List<UserDetails>> getUserListByIds(@RequestParam List<Long> ids) {
         try {
             log.info("userIds: {}", ids);

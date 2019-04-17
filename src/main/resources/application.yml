@@ -4,3 +4,9 @@ server:
 
 logging:
   level.org.springframework.web:  TRACE
+
+
+
+UserDetails:
+  csv:
+    location: C:\Ramesh\workspace\MyData\userDetails.csv
