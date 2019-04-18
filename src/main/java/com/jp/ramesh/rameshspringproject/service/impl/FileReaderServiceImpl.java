@@ -32,6 +32,7 @@ public class FileReaderServiceImpl implements FileReaderService {
             while ((line = br.readLine()) != null) {
                 String[] rowArray = line.split(cvsSplitBy);
                 userDetailsList.add(new UserDetails(Integer.parseInt(rowArray[0]), rowArray[1]));
+
             }
 
         } catch (IOException e) {
