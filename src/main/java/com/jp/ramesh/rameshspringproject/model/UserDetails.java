@@ -6,7 +6,6 @@ import lombok.Data;
 public class UserDetails {
 
     public UserDetails() {
-
     }
 
     public UserDetails(int id, String name) {

@@ -16,6 +16,9 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private FileReaderServiceImpl fileReaderService;
 
+    @Autowired
+    private FileWriterServiceImpl fileWriterService;
+
     @Override
     public UserDetails getUserById(String userId) {
         log.info("UserServiceImpl - getUserById - I am getting the user");
@@ -50,6 +53,14 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserDetails> getAllUserFromInputFile(List<Long> user) {
+        return null;
+    }
+
+    @Override
+    public UserDetails addUser(UserDetails userDetail) {
+        log.info("Adding the user records: ");
+        
+        fileWriterService.writeDataInFiles(userDetail);
         return null;
     }
 }
