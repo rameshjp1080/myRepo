@@ -59,8 +59,12 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDetails addUser(UserDetails userDetail) {
         log.info("Adding the user records: ");
-        
-        fileWriterService.writeDataInFiles(userDetail);
-        return null;
+        if (userDetail.getId() > 1000) {
+            fileWriterService.writeDataInFiles(userDetail);
+            return null;
+        } else {
+            log.info("User id less then 1000, please try with correct user id");
+            throw new RuntimeException("User Id should be greater than 1000");
+        }
     }
 }
