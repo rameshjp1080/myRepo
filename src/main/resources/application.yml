@@ -1,3 +1,12 @@
 server:
   port: 8180
   servlet.context-path: /ramesh
+
+logging:
+  level.org.springframework.web:  TRACE
+
+
+
+UserDetails:
+  csv:
+    location: C:\Ramesh\workspace\MyData\userDetails.csv
